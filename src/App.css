@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+
+.slides {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 0 260px;
+  color: white;
+  scroll-snap-align: start;
+}
+
+.slides h1 {
+  font-size: 40px;
+}
+
+.slides h2 {
+  margin-bottom: 14px;
+
+}
+
+.slides h3 {
+  color: rgb(190, 190, 39);
+}
+
+.slide1 {
+  background-color: rebeccapurple;
+}
+
+.slide2 {
+  background-color: rgb(67, 108, 31);
+}
+
+.slide3 {
+  background-color: rgb(152, 132, 32);
+}
+
+.slide4 {
+  background-color: rgb(235, 18, 173);
+}
+
+.btn-container {
+  height: 40px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 1px white solid;
+  color: white;
+}
+
+
+@media screen and (max-width:414px) {
+  .slides h1 {
+    font-size: 16px;
+  }
+  .slides h2 {
+    font-size: 12px;
+  }
+  .slides h3 {
+    font-size: 12px;
+  }
+  button {
+    padding: 10px 20px;
+    font-size: .8rem;
+    white-space: nowrap;
+  }
+  .slides {
+    /* justify-content: space-around; */
+    padding: 0 60px;
+  }
+}
